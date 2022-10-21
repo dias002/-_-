@@ -1,4 +1,5 @@
 
+
 html, body{
     width: 100%;
     margin: 0;
@@ -107,10 +108,15 @@ html, body{
 /* section 1 */
 .sect-1{
     background-image: url(../img/background_header.jpg);
-    background-position: center;
-    background-size: cover;
+
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+@media (max-width:320px) {
+    .sect-1{
+        background-size: auto 100%; 
+    }
 }
 .section-background{
     background-color: rgba(0, 0,0, 0.5);
@@ -557,6 +563,12 @@ html, body{
     background-attachment: fixed;
     display: flex;
     justify-content: center;
+}
+@media (max-width:425px) {
+    .sect-6{
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
 }
 .sect-6-conteiner{
     width: 90%;
