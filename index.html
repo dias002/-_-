@@ -11,12 +11,12 @@
 <body>
 
     <!-- фиксированная кнопка тел -->
-    <a href="tel:+78435610201" rel="nofollow">
+    <a class="phone_btn" href="tel:+78435610201" rel="nofollow">
         <span class="phone-button"></span>
     </a>
 
 
-
+<!-- header -->
     <header>
         <div class="header_box">
             <div class="header_navbar">
@@ -25,10 +25,48 @@
                 <img src="./img/logo.png" alt="">
                 <h1>Юридическое сопровождение</h1>
                 </div>
+
                 <div class="header_consultation">
-                   <a href="">Получить Консультацию</a>
+                   <button class="team_btn">Наша Команда</button>
+                   <button data-modal-button="modal-1" class="modal_btn" href="">Получить Консультацию</button>
                 </div>
               </div>
+            </div>
+            <div class="team">
+                <div class="team_card_box">
+                    <div class="team_card">
+                        <div class="team_title">
+                            <h1>
+                                ШЕВАЛОВСКИЙ АРТЁМ АЛЕКСАНДРОВИЧ
+                            </h1>
+                            <p>
+                                Первый заместитель генерального директора
+                            </p>
+                            <p>
+                                
+                                (кратко образование и опыт по всем)
+                            
+                            </p>
+                        </div>
+                        <div class="team_img"><img src="./img/rounded-in-photoretrica.png" alt=""></div>
+                    </div>
+                    <div class="team_card">
+                        <div class="team_title">
+                            <h1>
+                                ТРОШАГИНА ДАРИНА ВИКТОРОВНА
+                            </h1>
+                            <p>
+                                Заместитель руководителя юридического отдела по судебной работе
+                            </p>
+                            <p>
+                                
+                                (кратко образование и опыт по всем)
+                            
+                            </p>
+                        </div>
+                        <div class="team_img"><img src="./img/rounded-in-photoretrica-1.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header_main">
@@ -69,68 +107,227 @@
     </header>
    
 
+    <!-- modal window -->
+      <div id="modal-1" class="registration_block hidden">
+        <div id="regBox" class="reg_box">
+            <div class="reg_content">
+                <form action="">
+                    <h1>Оставьте заявку</h1>
+                    <input type="text" placeholder="Ваше имя" required="">
+                    <input type="number" placeholder="Ваш телефон" required="">
+                    <input type="email" placeholder="Ваш электронный адрес">
+    
+                    <p>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных <input type="checkbox"></p> 
+                    <input id="modal_close" class="submit_input" type="submit" value="Получить консультацию">
+                </form>
+            </div>
+        </div>
+      </div>
+   
 
-<main>
-    <div class="main_box">
-            <div class="section_1">
-                <div class="sct1_box container">
-                    <div class="sct1_main_content">
-                            <h1>Чем мы занимаемся?</h1>
-                            <div class="sct1_title">
-                                <div class="title_img"><img src="./img/document.png" alt=""></div>
-                                <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">Подготовим полный пакет документов для регистрации бизнеса</p>
+
+      <!-- main -->
+        <main>
+            <div class="main_box">
+                    <div class="section_1">
+                        <div class="sct1_box container">
+                            <div class="sct1_main_content">
+                                    <h1>Чем мы занимаемся?</h1>
+                                    <div class="sct1_title">
+                                        <div class="title_img"><img src="./img/document.png" alt=""></div>
+                                        <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">Подготовим полный пакет документов для регистрации бизнеса</p>
+                                    </div>
+                                    <div class="sct1_title">
+                                        <div class="title_img"><img src="./img/contract.png" alt=""></div>
+                                        <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+                                            Разработаем договоры, инструкции, положения
+                                    </p>
+                                    </div>
+                                    <div class="sct1_title">
+                                        <div class="title_img"><img src="./img/suitcase.png" alt=""></div>
+                                        <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+                                            Проверим контрагентов и документы для сделок 
+                                    </p>
+                                    </div>
+                                    <div class="sct1_title">
+                                        <div class="title_img" ><img src="./img/auction.png" alt=""></div>
+                                        <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+                                            Защитим интересы до суда, в суде и органах власти
+                                    </p>
+                                    </div>
+                                    <div class="sct1_title">
+                                        <div class="title_img"><img src="./img/handshake.png" alt=""></div>
+                                        <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+                                            Составим процессуальные документы (иски, отзывы, ходатайства, возражения, жалобы)
+                                        </p>
+                                    </div>
+                                    <div class="sct1_title">
+                                        <div class="title_img"><img src="./img/head.png" alt=""></div>
+                                        <p data-aos="zoom-out-up"  data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+                                            Проанализируем правовые риски решений 
+                                    </p>
+                                    </div>
+                                    <div class="sct1_title">
+                                        <div class="title_img"><img src="./img/document.png" alt=""></div>
+                                        <p data-aos="zoom-out-up"  data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">Подготовим полный пакет документов для регистрации бизнеса</p>
+                                    </div>
                             </div>
-                            <div class="sct1_title">
-                                <div class="title_img"><img src="./img/contract.png" alt=""></div>
-                                <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
-                                    Разработаем договоры, инструкции, положения
-                            </p>
+                            <div class="sct1_img">
+                                <img src="./img/img-1.jpg" alt="">
                             </div>
-                            <div class="sct1_title">
-                                <div class="title_img"><img src="./img/suitcase.png" alt=""></div>
-                                <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
-                                    Проверим контрагентов и документы для сделок 
-                               </p>
-                            </div>
-                            <div class="sct1_title">
-                                <div class="title_img" ><img src="./img/auction.png" alt=""></div>
-                                <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
-                                    Защитим интересы до суда, в суде и органах власти
-                               </p>
-                            </div>
-                            <div class="sct1_title">
-                                <div class="title_img"><img src="./img/handshake.png" alt=""></div>
-                                <p data-aos="zoom-out-up" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
-                                    Составим процессуальные документы (иски, отзывы, ходатайства, возражения, жалобы)
-                                </p>
-                            </div>
-                            <div class="sct1_title">
-                                <div class="title_img"><img src="./img/head.png" alt=""></div>
-                                <p data-aos="zoom-out-up"  data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
-                                    Проанализируем правовые риски решений 
-                            </p>
-                            </div>
-                            <div class="sct1_title">
-                                <div class="title_img"><img src="./img/document.png" alt=""></div>
-                                <p data-aos="zoom-out-up"  data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">Подготовим полный пакет документов для регистрации бизнеса</p>
-                            </div>
+                        </div>
                     </div>
-                    <div class="sct1_img">
-                        <img src="./img/img-1.jpg" alt="">
+
+
+                    <div class="section_2">
+                        <div class="sct2_box container">
+                            <div class="sct2_card" data-aos="flip-left">
+                                <div class="card_title">
+                                    <h1>Договорное право</h1>
+                                    <p>Поможем проверить чистоту сделки</p>
+                                </div>
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="sct2_card" data-aos="flip-right">
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-3.jpg" alt="">
+                                </div>
+                                <div class="card_title">
+                                    <h1>Налоговое право</h1>
+                                    <p>Окажем правовую помощь при проведении проверки</p>
+                                </div>
+                            </div>
+                            <div class="sct2_card" data-aos="flip-left">
+                                <div class="card_title">
+                                    <h1>Бухгалтерский учет</h1>
+                                    <p>Предложим услуги качественного ведения бухгалтерского учета</p>
+                                </div>
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="sct2_card" data-aos="flip-right">  
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-5.jpg" alt="">
+                                </div>
+                                <div class="card_title">
+                                    <h1>Антимонопольное право</h1>
+                                    <p>Защитим интересы на заседании комиссии и в суде</p>
+                                </div>
+                            </div>
+                            <div class="sct2_card" data-aos="flip-left">
+                                <div class="card_title">
+                                    <h1>Банкротство</h1>
+                                    <p>Предложим полный комплекс услуг по банкротству физических и юридических лиц</p>
+                                </div>
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="sct2_card" data-aos="flip-right">
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-7.jpg" alt="">
+                                </div>
+                                <div class="card_title">
+                                    <h1>Корпоративные споры</h1>
+                                    <p>Поддержка при создании, реорганизации и ликвидации бизнеса. Споры между участниками.</p>
+                                </div>
+                            </div>
+                            <div class="sct2_card" data-aos="flip-left">
+                                 <div class="card_title">
+                                    <h1>Арбитражные споры</h1>
+                                    <p>Сопровождаем клиента от претензии до исполнительного листа</p>
+                                </div>
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-8.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="sct2_card" data-aos="flip-right">
+                                <div class="sct2_card_img">
+                                    <img src="./img/img-9.jpg" alt="">
+                                </div>
+                                <div class="card_title">
+                                    <h1>Лицензирование</h1>
+                                    <p>Поможем получить вам лицензию
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="section_3">
+                        <div class="sct3_box container">
+                            <div class="sct3_title">
+                                <h1>
+                                   Варианты работы
+                                </h1>
+                            </div>
+                            <div class="sct3_cards">
+                                <div class="sct3_card"  data-aos="fade-right">
+                                    <div class="sct3_card_title">
+                                        <p>
+                                            Абонентское обслуживание (см. пакеты)
+                                        </p>
+                                        <a href="">скачать прайс</a>
+                                    </div>
+                                </div>
+                                <div class="sct3_card" data-aos="fade-left">
+                                    <div class="sct3_card_title">
+                                        <p>     
+                                         Сопровождение проекта с индивидуальным набором услуг
+                                        </p>
+                                        <a href="">скачать прайс</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+
+
+
+
+        <!-- footer -->
+        <footer>
+           <div class="footer_background">
+            <div class="footer_info">
+                <h1>
+                    ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ БИЗНЕСА И ГОСУДАРСТВЕННЫХ УЧРЕЖДЕНИЙ
+                </h1>
+                <p>
+                    Режим работы:<br>
+                    Пн-Чт с 9:00 - 18:00 / <br>
+                    Пт с 9:00 - 16:45 <br>
+                    Сб-Вс - Выходные<br>
+                </p>
+                <p class="adress">
+                    Адрес: г. Казань, ул. Петербургская 86 Россия, 420107
+                </p>
+                <a href="">crz.rt@tatar.ru</a>
+                <button>Заказать звонок</button>
+            </div>
+            <div class="footer_map">
+                <div class="footer-map-div">
+                    <div class="footer-map" style="position:relative;overflow:hidden;outline: none;border: none;">
+                        <a href="https://yandex.com/maps/43/kazan/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казань</a>
+                        <a href="https://yandex.com/maps/43/kazan/house/peterburgskaya_ulitsa_86/YEAYdwNhTEcOQFtvfXt2dnxgbQ==/?ll=49.141600%2C55.776942&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Петербургская улица, 86 на карте Казани, ближайшее метро Суконная слобода — Яндекс&nbsp;Карты</a>
+                        <iframe src="https://yandex.com/map-widget/v1/-/CCUV5JxzsC" width="500" height="400" frameborder="0" allowfullscreen="true" style="position:relative;">
+                        </iframe>
                     </div>
                 </div>
             </div>
-    </div>
-</main>
+           </div>   
+        </footer>
 
+
+       
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src='./js/index.js'></script>
 
-</body>
-</html>
-   </footer>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script src="./js/index.js"></script>
 </body>
 </html>
